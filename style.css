@@ -6,6 +6,7 @@ body {
   flex-direction: column;
   font-family: "Inter", sans-serif;
   color: #ffffff;
+  overflow-x: hidden;
 }
 .box {
   width: 100%;
@@ -52,7 +53,7 @@ p {
 }
 .ambient1 {
   position: absolute;
-  top: 40vw;
+  top: 70vh;
   left: 60vw;
   filter: blur(200px);
   height: 25vw;
@@ -73,16 +74,61 @@ p {
   right: 10vw;
 }
 .smallbox {
-  width: 500px;
-  height: 500px;
+  width: 20vw;
+  height: 20vw;
   background-color: #262629;
   overflow: hidden;
   border-radius: 1vw;
+  box-shadow: inset 0px 0px 40px 13px #212121;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .smallbox .circle {
   position: relative;
-  top: 10vw;
-  right: 0vw;
+  top: 1vw;
+  right: 7vw;
   width: 10vw;
+
   height: 10vw;
+  background-color: #35e865da;
+}
+.profile {
+  position: relative;
+  top: 5vw;
+  width: 7vw;
+}
+.s_b_container {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h3 {
+  text-align: center;
+  margin-top: 10vw;
+  font-size: 1.3vw;
+}
+.window2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10vw;
+}
+.stars {
+  width: 80%;
+}
+
+.s_b_1,
+.s_b_3 {
+  position: relative;
+  top: 3vw;
+  opacity: 0.3;
+}
+.s_b_1 {
+  transform: rotate(-30deg);
+  right: 7vw;
+}
+.s_b_3 {
+  transform: rotate(30deg);
+  left: 7vw;
 }
